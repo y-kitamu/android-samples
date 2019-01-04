@@ -101,9 +101,9 @@ class LiteListDemoActivity : AppCompatActivity() {
      * that is programatically initialised when onCreateViewHolder is called.
      */
     inner class MapAdapter : RecyclerView.Adapter<MapAdapter.ViewHolder>() {
-
-        override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
-            holder?.bindView(position) ?: return
+        
+        override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+            holder?.bindView(position)
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
